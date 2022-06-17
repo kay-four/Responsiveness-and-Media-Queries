@@ -1,0 +1,60 @@
+*{
+    
+    margin: 20px;
+    
+        font-family: 'Poppins';
+        font-size: 16px;
+        src: url(https://fonts.google.com/specimen/Poppins);
+      
+}
+
+    
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Poppins';
+    
+    background-color:hsl(0, 100%, 74%);
+    background-image:url(bg-intro-mobile.png);
+}
+.textSection{
+    color: white;
+    font-family: 'Poppins';
+    justify-self: center;
+    align-items: center;
+    padding: 10px;
+    margin:10px;
+  }
+  h2{
+    font-family: 'Poppins';
+    font-weight: 700;
+  }
+  .formSection{
+    
+    padding: 20px;
+    margin: 10px;
+  
+  }
+  .form{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .try{
+    padding: 10px;
+  }
+  .trybtn{
+    font-weight: 400;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px;
+    color: white;
+    
+  }
