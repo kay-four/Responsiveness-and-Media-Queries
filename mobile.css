@@ -14,6 +14,7 @@
 body{
     display: flex;
     flex-direction: column;
+    
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -25,22 +26,23 @@ body{
     background-image:url(bg-intro-mobile.png);
 }
 .textSection{
+  box-sizing:border-box;
     color: white;
     font-family: 'Poppins';
-    justify-self: center;
-    align-items: center;
+    align-self: center;   
     padding: 10px;
     margin:10px;
   }
-  .textSection h2{
+  
+  .textSection h1{
     text-align: center;
     font-family: 'Poppins';
     font-size:xx-large;
     
     font-weight: 700;
   }
-  p{
-    text-align: center;
+  .textSection p{
+    text-align: end;
   }
   .formSection{
     
@@ -53,10 +55,13 @@ body{
     padding: 10px;
     border-radius: 10px;
   }
-  .form input{
+  form input{
     border-radius: 5px;
     border: 1px solid hsl(246, 25%, 77%);
-    /* margin: 0%; */
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+    
   }
   
   .form p{
@@ -64,6 +69,12 @@ body{
     font-size: xx-small;
     font-weight: 400;
   }
+  .form a{
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+  }
+  
   .try{
     padding: 10px;
     box-shadow: 1px;
@@ -80,6 +91,7 @@ body{
     
   }
   .claimbtn{
+    cursor: pointer;
     background-color:hsl(154, 59%, 51%);
     color: white;
     font-family: 'Poppins';
@@ -90,4 +102,9 @@ body{
     box-shadow: 0 4px 8px hsl(154, 59%, 51%);
     
    }
+   .claimbtn:hover{
+    background-color:hsl(154, 59%, 61%);
+  
+   }
+   
    

@@ -15,14 +15,12 @@ body{
     background-image:url(bg-intro-desktop.png);
 }
 .textSection{
-  text-align: center;
-  justify-content: center;
-  align-items: flex-start;
+  box-sizing: border-box;
+ 
   flex:1;
   color: white;
   font-family: 'Poppins';
-  margin:10px;
-  padding: 20px;
+ 
 }
 .textSection h2{
   text-align: center;
@@ -59,20 +57,25 @@ body{
   border-radius: 10px;
  
 }
-.form input{
-  text-align: start;
-  font-family: 'Poppins',sans-serif;
-  width:93%;
-  margin:5px;  
+form input{
+ 
+  width: 100%;
   border-radius: 5px;
   border: 1px solid hsl(246, 25%, 77%);
-  padding: 10px;
-  
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 8px 0;
 }
 .form p{
+  text-align: center;
   color: hsl(246, 25%, 77%);
   font-weight: 400;
   font-size: xx-small;
+}
+.form a{
+  text-decoration: none;
+  color: red;
+  font-weight: 400;
 }
 
 .claimbtn{
