@@ -1,83 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsiveness and Media Queries</title>
-    <link
-      rel="stylesheet"
-      media="screen and (min-width:375px)"
-      href="desktop.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 375px)"
-      href="mobile.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Open+Sans&family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="textSection">
-      <h1>Learn to code by watching others</h1>
-      <p>
-        See how experienced developers solve problems in real-time.Wacthing
-        scripted tutorials is great, but understanding how developers think is
-        invaluable.
-      </p>
-    </div>
-    <div class="formSection">
-      <div class="try">
-        <button class="trybtn">
-          <strong>Try it free 7days</strong> then $20/mo. thereafter
-        </button>
-      </div>
 
-      <div class="form">
-        <form action="submit">
-          <input
-            type="text"
-            name="firstname"
-            id="firstname"
-            placeholder="First Name"
-            required
-          />
-          <br />
-          <input
-            type="text"
-            name="lastname"
-            id="lastname"
-            placeholder="Last Name"
-            required
-          />
-          <br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-            required
-          />
-          <br />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-            required
-          />
-          <br />
-          <button class="claimbtn">CLAIM YOUR FREE TRIAL</button>
-          <p>
-            By clicking the button, you are agreeing to our<a href=""
-              >Terms and Services</a
-            >
-          </p>
-        </form>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsiveness and Media Queries</title>
+  <link rel="stylesheet" media="screen and (min-width:375px)" href="desktop.css" />
+  <link rel="stylesheet" media="screen and (max-width: 375px)" href="mobile.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Open+Sans&family=Poppins&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="textSection">
+    <h1>Learn to code by watching others</h1>
+    <p>
+      See how experienced developers solve problems in real-time.Wacthing
+      scripted tutorials is great, but understanding how developers think is
+      invaluable.
+    </p>
+  </div>
+  <div class="formSection">
+    <div class="try">
+      <button class="trybtn">
+        <strong>Try it free 7days</strong> then $20/mo. thereafter
+      </button>
     </div>
-  </body>
+
+    <div class="form">
+      <form action="submit">
+        <div class="fnamecontainer" data-error="First Name cannot be empty">
+          <input class="firstname" type="text" name="firstname" id="firstname" placeholder="First Name" value="Jonathan"
+            required />
+        </div>
+        <div class="lnamecontainer" data-error="Last Name cannot be empty">
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name" required />
+        </div>
+        <div class="emailcontainer" data-error="Looks like this is not an email">
+          <input type="email" name="email" id="email" placeholder="Email Address" required />
+        </div>
+        <div class="passwordcontainer" data-error="Password cannot be empty">
+          <input type="password" name="password" id="password" placeholder="Password" required />
+        </div>
+
+        <button class="claimbtn">CLAIM YOUR FREE TRIAL</button>
+        <p>
+          By clicking the button, you are agreeing to our<a href="">Terms and Services</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+
 </html>
